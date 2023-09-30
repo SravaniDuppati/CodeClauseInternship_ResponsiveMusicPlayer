@@ -1,1 +1,3 @@
 # CodeClauseInternship_ResponsiveMusicPlayer
+
+This is a Responsive Music Player Project using front-end technologies...
