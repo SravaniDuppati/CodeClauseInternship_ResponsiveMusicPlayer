@@ -1,0 +1,116 @@
+body {
+background-image: url('images/back_ground.png');
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+backdrop-filter: blur(9px);
+}
+
+.player {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Using flex with the column direction to align items in a vertical direction */
+    
+.details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+}
+    
+.track-art {
+    margin: 25px;
+    height: 250px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+}
+    
+.track-name {
+    font-size: 3rem;
+}
+    
+.track-artist {
+    font-size: 1.5rem;
+}
+    
+    /* Using flex with the row direction to align items in a horizontal direction */
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+    
+.random-track,
+.play-track,
+.repeat-track{
+    padding: 25px;
+    opacity: 0.8;
+}
+    
+.random-track:hover,
+.play-track:hover,
+.back-track:hover,
+.next-track:hover,
+.repeat-track:hover{
+    opacity: 1.0;
+}
+    
+    /* Defining the slider width */
+.slider_container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+    /* Modify the appearance of the slider */
+.seek_slider {
+    height: 5px;
+    background: rgb(6, 6, 6);
+    opacity: 1;
+}
+    
+    /* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+    /* changing color of slider thumb*/
+input[type="range"] {
+    accent-color: rgb(5, 4, 4);
+}
+    
+    /* Changing the opacity when mouse is hovered */
+.seek_slider:hover{
+    opacity: 1.0;
+}
+    
+.seek_slider {
+    width: 60%;
+}
+    
+.current-time,
+.total-duration {
+    padding: 10px;
+}
+
+.random-track:hover,
+.play-track:hover,
+.back-track:hover,
+.next-track:hover,
+.repeat-track:hover{
+    cursor: pointer;
+}
+    
